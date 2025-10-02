@@ -1,6 +1,6 @@
 module adder(
     // Declare your A/B inputs
-    input A, B
+    input A, B,
     // Declare Y output
     output Y,
     // Declare carry output

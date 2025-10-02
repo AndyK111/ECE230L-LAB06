@@ -1,6 +1,6 @@
 // Implement module called full_adder
 module full_adder(
-    input A, B, CARRY_IN
+    input A, B, CARRY_IN,
     output Y, CARRY_OUT
 );
 
@@ -9,3 +9,5 @@ assign Y = (A ^ B) ^ CARRY_IN;
 
 //Otherwise trigger carryout, only if A&B is 1, or if CARRY_IN is 1 and only A or B is 1
 assign CARRY_OUT = (A&B) | (CARRY_IN & (B|A) );
+
+endmodule
